@@ -6,12 +6,84 @@ package com.myspace.space_136519;
 
 public class Application implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Application() {
-    }
+	@org.kie.api.definition.type.Label(value = "Amortization")
+	private java.lang.Integer amortization;
+	@org.kie.api.definition.type.Label(value = "Applicant")
+	private com.myspace.space_136519.Applicant applicant;
+	@org.kie.api.definition.type.Label(value = "Down Payment")
+	private java.lang.Integer downpayment;
+	@org.kie.api.definition.type.Label(value = "Error details")
+	private com.myspace.space_136519.ValidationErrorDO errors;
+	@org.kie.api.definition.type.Label(value = "Mortgage Amount")
+	private java.lang.Integer mortgageamount;
+	@org.kie.api.definition.type.Label(value = "Property")
+	private com.myspace.space_136519.Property property;
 
+	public Application() {
+	}
 
+	public java.lang.Integer getAmortization() {
+		return this.amortization;
+	}
 
+	public void setAmortization(java.lang.Integer amortization) {
+		this.amortization = amortization;
+	}
+
+	public com.myspace.space_136519.Applicant getApplicant() {
+		return this.applicant;
+	}
+
+	public void setApplicant(com.myspace.space_136519.Applicant applicant) {
+		this.applicant = applicant;
+	}
+
+	public java.lang.Integer getDownpayment() {
+		return this.downpayment;
+	}
+
+	public void setDownpayment(java.lang.Integer downpayment) {
+		this.downpayment = downpayment;
+	}
+
+	public com.myspace.space_136519.ValidationErrorDO getErrors() {
+		return this.errors;
+	}
+
+	public void setErrors(com.myspace.space_136519.ValidationErrorDO errors) {
+		this.errors = errors;
+	}
+
+	public java.lang.Integer getMortgageamount() {
+		return this.mortgageamount;
+	}
+
+	public void setMortgageamount(java.lang.Integer mortgageamount) {
+		this.mortgageamount = mortgageamount;
+	}
+
+	public com.myspace.space_136519.Property getProperty() {
+		return this.property;
+	}
+
+	public void setProperty(com.myspace.space_136519.Property property) {
+		this.property = property;
+	}
+
+	public Application(java.lang.Integer amortization,
+			com.myspace.space_136519.Applicant applicant,
+			java.lang.Integer downpayment,
+			com.myspace.space_136519.ValidationErrorDO errors,
+			java.lang.Integer mortgageamount,
+			com.myspace.space_136519.Property property) {
+		this.amortization = amortization;
+		this.applicant = applicant;
+		this.downpayment = downpayment;
+		this.errors = errors;
+		this.mortgageamount = mortgageamount;
+		this.property = property;
+	}
 
 }
