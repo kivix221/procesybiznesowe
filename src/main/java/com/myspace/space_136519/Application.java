@@ -6,12 +6,82 @@ package com.myspace.space_136519;
 
 public class Application implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Application() {
-    }
+	@org.kie.api.definition.type.Label(value = "Amortization")
+	private java.lang.Integer amortization;
+	@org.kie.api.definition.type.Label(value = "Applicant")
+	private com.Applicant applicant;
+	@org.kie.api.definition.type.Label(value = "Down Payment")
+	private java.lang.Integer downpayment;
+	@org.kie.api.definition.type.Label(value = "Error details")
+	private java.math.BigDecimal errors;
+	@org.kie.api.definition.type.Label(value = "Mortgage amount")
+	private java.lang.Integer mortgageamount;
+	@org.kie.api.definition.type.Label(value = "Property")
+	private com.myspace.space_136519.Property property;
 
+	public Application() {
+	}
 
+	public java.lang.Integer getAmortization() {
+		return this.amortization;
+	}
 
+	public void setAmortization(java.lang.Integer amortization) {
+		this.amortization = amortization;
+	}
+
+	public com.Applicant getApplicant() {
+		return this.applicant;
+	}
+
+	public void setApplicant(com.Applicant applicant) {
+		this.applicant = applicant;
+	}
+
+	public java.lang.Integer getDownpayment() {
+		return this.downpayment;
+	}
+
+	public void setDownpayment(java.lang.Integer downpayment) {
+		this.downpayment = downpayment;
+	}
+
+	public java.math.BigDecimal getErrors() {
+		return this.errors;
+	}
+
+	public void setErrors(java.math.BigDecimal errors) {
+		this.errors = errors;
+	}
+
+	public java.lang.Integer getMortgageamount() {
+		return this.mortgageamount;
+	}
+
+	public void setMortgageamount(java.lang.Integer mortgageamount) {
+		this.mortgageamount = mortgageamount;
+	}
+
+	public com.myspace.space_136519.Property getProperty() {
+		return this.property;
+	}
+
+	public void setProperty(com.myspace.space_136519.Property property) {
+		this.property = property;
+	}
+
+	public Application(java.lang.Integer amortization, com.Applicant applicant,
+			java.lang.Integer downpayment, java.math.BigDecimal errors,
+			java.lang.Integer mortgageamount,
+			com.myspace.space_136519.Property property) {
+		this.amortization = amortization;
+		this.applicant = applicant;
+		this.downpayment = downpayment;
+		this.errors = errors;
+		this.mortgageamount = mortgageamount;
+		this.property = property;
+	}
 
 }
