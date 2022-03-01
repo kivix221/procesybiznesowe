@@ -6,12 +6,58 @@ package com.myspace.space_136519;
 
 public class Property implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Property() {
-    }
+	@org.kie.api.definition.type.Label(value = "Address")
+	private java.lang.String address;
+	@org.kie.api.definition.type.Label(value = "Age of property")
+	private java.lang.Integer age;
+	@org.kie.api.definition.type.Label(value = "Locale")
+	private java.lang.String locale;
+	@org.kie.api.definition.type.Label(value = "Sale Price")
+	private java.lang.Integer saleprice;
 
+	public Property() {
+	}
 
+	public java.lang.String getAddress() {
+		return this.address;
+	}
 
+	public void setAddress(java.lang.String address) {
+		this.address = address;
+	}
+
+	public java.lang.Integer getAge() {
+		return this.age;
+	}
+
+	public void setAge(java.lang.Integer age) {
+		this.age = age;
+	}
+
+	public java.lang.String getLocale() {
+		return this.locale;
+	}
+
+	public void setLocale(java.lang.String locale) {
+		this.locale = locale;
+	}
+
+	public java.lang.Integer getSaleprice() {
+		return this.saleprice;
+	}
+
+	public void setSaleprice(java.lang.Integer saleprice) {
+		this.saleprice = saleprice;
+	}
+
+	public Property(java.lang.String address, java.lang.Integer age,
+			java.lang.String locale, java.lang.Integer saleprice) {
+		this.address = address;
+		this.age = age;
+		this.locale = locale;
+		this.saleprice = saleprice;
+	}
 
 }
