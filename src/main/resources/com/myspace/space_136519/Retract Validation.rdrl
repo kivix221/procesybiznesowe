@@ -5,5 +5,7 @@ import java.lang.Number;
 rule "Retract Validation"
 	dialect "mvel"
 	when
+		vdo : ValidationErrorDO( )
 	then
+		retract( vdo );
 end
