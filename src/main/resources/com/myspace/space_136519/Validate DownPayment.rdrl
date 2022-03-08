@@ -1,0 +1,9 @@
+package com.myspace.space_136519;
+
+import java.lang.Number;
+
+rule "Validate DownPayment"
+	dialect "mvel"
+	when
+	then
+end
