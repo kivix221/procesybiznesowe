@@ -4,6 +4,7 @@ import java.lang.Number;
 
 rule "Validate DownPayment"
 	dialect "mvel"
+	ruleflow-group "validation"
 	when
 		app : Application( downpayment == 0 , downpayment > app.property.saleprice )
 	then
